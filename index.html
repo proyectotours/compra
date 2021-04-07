@@ -6,17 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
   <!-- Custom Styles -->
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
   <!-- Project -->
+  
+  <form action="">
+    
+    <div>
+      <h1>Paraíso chiapas</h1>
+      <h3>Añade un producto</h3>
+    </div>
+    
+    <div>
+      <label for="categoria"></label>
+      <select name="categoria">
+        <option value="">Selecione una Categoria</option>
+        <option value="helado">Helado</option>
+        <option value="torta">Torta</option>
+      </select>
+        
+      </select>
+    </div>
+    
+    <div id="sabores"></div>
+    <div>
+      <label for="sabor">Sabor: </label><br>
+      <input type="text" name="sabor" id="sabor" class="input" required>
+    </div>
+    <div>
+      <label for="cantidad">Cantidad: </label><br>
+      <input type="number" name="cantidad" id="cantidad" class="input" min=1 max=100 required>
+    </div>
+    <div>
+      <strong>Tamaño</strong><br><br>
+      <input type="radio" name="size" id="small" value="pequeño" required checked>
+      <label for="small">Pequeño</label><br>
+      <input type="radio" name="size" id="medium" value="mediano" required>
+      <label for="medium">Mediano</label><br>
+      <input type="radio" name="size" id="big" value="grande" required>
+      <label for="big">Grande</label><br><br>
+    </div>
+    <div>
+      <strong>Complementos</strong><br><br>
+      <input type="checkbox" id="mani" value="mani" />
+      <label for="mani">Mani</label><br>
+      <input type="checkbox" id="chocolate" value="Chispas de Chocolate" />
+      <label for="chocolate">Chispas de Chocolate</label><br>
+      <input type="checkbox" id="chispas" value="Chispas de Colores" />
+      <label for="chispas">Chispas de Colores</label><br>
+      <input type="checkbox" id="leche" value="Leche Condensada" />
+      <label for="leche">Leche Condensada</label><br><br>
+    </div>
+    <div>
+      <input type="submit" name="send-buttom" id="send-buttom" class="button" />
+      <input type="reset" value="Borrar" class="button" />
+    </div>
+    <div class="container"></div>
+    <div>
+      <input type="button" value="Completar Compra" id="finish" class="button" />
+    </div>
+    
+  </form>
+  
+  
+  
+  
+  
   <script src="main.js"></script>
 </body>
 </html>
